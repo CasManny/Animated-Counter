@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 900px;
+    margin: 0 auto;
+}
+.container div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    text-transform: capitalize;
+    
+}
+h1,span{
+    font-weight: 700;
+}
+.counter {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+}
